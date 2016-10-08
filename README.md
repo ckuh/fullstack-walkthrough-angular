@@ -1,5 +1,5 @@
 # fullstack-walkthrough-angular
-A walkthrough of a building a basic full stack tweet viewing app using Node, Express, and Angular.
+A walkthrough of a building a basic full stack Chuck Norris joke viewing app using Node, Express, and Angular.
 
 `git checkout step-0` to begin!
 
