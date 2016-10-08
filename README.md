@@ -1,12 +1,3 @@
-# fullstack-walkthrough-angular
-A walkthrough of a building a basic full stack tweet viewing app using Node, Express, and Angular.
+# Step 0 
 
-`git checkout step-0` to begin!
-
-`git checkout -f step-n` to navigate!
-
-# Table of Contents
-
-`step-0` - basic server setup
-
-`step-1` - basic server + some file structure
+In the [fullstack-walkthrough-react](https://github.com/justinpchen94/fullstack-walkthrough-react) repo, we walked through the steps to create a Node server that acts as an API. We will use some of the same files here to get started. Namely, we will reuse most of the `server.js` code and the skeleton of a controller called `norris.js`.

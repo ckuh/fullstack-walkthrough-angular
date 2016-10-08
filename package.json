@@ -1,0 +1,27 @@
+{
+  "name": "fullstack-walkthrough-angular",
+  "version": "1.0.0",
+  "description": "A walkthrough of building a full stack web app using Node, Express, and Angular 1.5.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justinpchen94/fullstack-walkthrough-angular.git"
+  },
+  "author": "Justin Chen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justinpchen94/fullstack-walkthrough-angular/issues"
+  },
+  "homepage": "https://github.com/justinpchen94/fullstack-walkthrough-angular#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.0",
+    "moment": "^2.15.1",
+    "morgan": "^1.7.0"
+  }
+}
