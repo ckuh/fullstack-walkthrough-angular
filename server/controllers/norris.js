@@ -1,21 +1,15 @@
 const express = require('express');
 const router = express.Router();
+const norrisHelper = require('../helpers/norrisHelper');
 
 
-router.get('/', (req,res) => {
-  res.send("We haven't implemented getting yet!");
-})
+router.get('/:num', (req,res) => {
 
-router.post('/', (req,res) => {
-  res.send("We haven't implemented posting yet!");
-})
-
-router.put('/', (req,res) => {
-  res.send("We haven't implemented updating yet!");
-})
-
-router.put('/', (req,res) => {
-  res.send("We haven't implemented deleting yet!");
+  //call randomJokes and use promises to extract jokes
+  norrisHelper.randomJokes(req.params.num)
+    .then((resp, body) => {
+      res.send(JSON.parse(resp.body).value)
+    })
 })
 
 module.exports = router;

@@ -1,3 +1,5 @@
-# Step 0 
+# Step 1
 
-In the [fullstack-walkthrough-react](https://github.com/justinpchen94/fullstack-walkthrough-react) repo, we walked through the steps to create a Node server that acts as an API. We will use some of the same files here to get started. Namely, we will reuse most of the `server.js` code and the skeleton of a controller called `norris.js`.
+We begin by creating a helper folder to separate out details and logic from our controller file. This will help make it easier to diagnose problems and to make our files look cleaner.
+
+We then create a helper file with a function that uses a promisified version of request to make a call to the chuck norris joke api we are using.
