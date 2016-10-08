@@ -8,7 +8,7 @@ const express = require('express'),
       
 app.set('port', (process.env.PORT || 3000));
 
-app.use('/', express.static(path.join(__dirname, '../public')));
+app.use('/', express.static(path.join(__dirname, '../client')));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: true}));
 
@@ -18,7 +18,7 @@ app.use(cors());
 
 //Routing
 const norrisRouter = require('./controllers/norris')
-app.use('/api/norris', norrisRouter)
+app.use('/api/jokes', norrisRouter)
 
 
 app.listen(app.get('port'), function() {

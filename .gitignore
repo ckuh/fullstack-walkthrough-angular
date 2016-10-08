@@ -40,3 +40,4 @@ dist
 .DS_Store
 
 .env
+bower_components

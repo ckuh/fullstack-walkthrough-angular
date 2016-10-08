@@ -3,12 +3,14 @@ const router = express.Router();
 const norrisHelper = require('../helpers/norrisHelper');
 
 
-router.get('/:num', (req,res) => {
+router.get('/', (req,res) => {
 
-  //call randomJokes and use promises to extract jokes
-  norrisHelper.randomJokes(req.params.num)
+  //reconfigure our route to take params
+  const numJokes = req.query.numJokes
+
+  norrisHelper.randomJokes(numJokes)
     .then((resp, body) => {
-      res.send(JSON.parse(resp.body).value)
+      res.send(JSON.parse(resp.body))
     })
 })
 

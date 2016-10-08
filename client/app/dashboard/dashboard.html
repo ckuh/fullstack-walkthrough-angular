@@ -1,0 +1,20 @@
+<div class="container">
+
+    <div>
+      <h1>Chuck Norris Jokes</h1>
+      <form ng-submit="vm.submit(vm.name)" name="norrisJokeNum" >
+        <div>
+          <input type="text" placeholder="How many jokes?" class="username" ng-model="vm.name" minlength="1" required>
+        </div>
+      </form>
+    </div>
+  <p class="error" ng-if="vm.isInvalid">Error. Please type in valid username.</p>
+  <div class="loader" ng-show="vm.isLoading">Loading...</div>
+  
+  <ul>
+    <li ng-repeat="joke in vm.jokes " class="tweets">
+    {{joke.id}}: {{joke.joke}}
+    </li>
+
+  </ul>
+</div>

@@ -1,0 +1,20 @@
+{
+  "name": "fullstack-walkthrough-angular",
+  "description": "A walkthrough of building a full stack web app using Node, Express, and Angular 1.5.",
+  "main": "index.js",
+  "authors": [
+    "Justin Chen"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/justinpchen94/fullstack-walkthrough-angular",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "underscore": "^1.8.3"
+  }
+}
