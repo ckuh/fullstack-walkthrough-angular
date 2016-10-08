@@ -10,3 +10,5 @@ A walkthrough of a building a basic full stack Chuck Norris joke viewing app usi
 `step-0` - basic server setup
 
 `step-1` - basic server + some file structure
+
+`step-2` - Angular
