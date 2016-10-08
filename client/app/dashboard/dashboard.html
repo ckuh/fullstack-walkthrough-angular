@@ -11,10 +11,10 @@
   <p class="error" ng-if="vm.isInvalid">Error. Please type in valid username.</p>
   <div class="loader" ng-show="vm.isLoading">Loading...</div>
   
-  <ul>
+  <ol>
     <li ng-repeat="joke in vm.jokes " class="tweets">
-    {{joke.id}}: {{joke.joke}}
+    {{joke.joke}}
     </li>
 
-  </ul>
+  </ol>
 </div>
